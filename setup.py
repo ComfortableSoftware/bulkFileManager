@@ -17,29 +17,20 @@ setup(
   author="GaelicGrime",
   author_email="will.angus.blaylock@gmail.com",
   license="GPLv3",
-  name="**PACKAGE_NAME**",
+  name="Bulk File Manager",
   url="https://github.com/ComfortableSoftware/commonFunctions_py",
-  version="0.8.0",
-  package_dir={"**PACKAGE_NAME**": "**PACKAGE_NAME**"},
+  version="0.1.0",
+  package_dir={"bulkFileManager": "bulkFileManager"},
   package_data={
-      "**PACKAGE_NAME**": [
+      "bulkFileManager": [
           "../doc/*",
       ]
   },
-  packages=["**PACKAGE_NAME**"],
+  packages=["bulkFileManagerk"],
   install_requires=[
+      "CF",
   ],
   extras_require={
-      "hashing": ["hashlib"],
-      "pickling": ["pickle"],
-      "timestuff": [
-          "datedelta",
-          "datetime",
-          "dateutil",
-          "time",
-      ],
-      "debugging": [
-          "inspect",
       ],
   }
 )
