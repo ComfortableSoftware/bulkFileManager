@@ -42,9 +42,9 @@ I like a broad selection of images or clips randomized, so I collect media, sort
   - I am probably not going to submit this to any of the collections of python code due to it's likely lack of benefit to most people.
 <br>
   ## OPTIONS
+  - Copy/move files from source to the distributed destinations.
   - Edit which category a file extention goes into, add or remove extensions from a category, etc.
     - You can add categories, test utilities per extension, etc. by editing the source file "configMe.py" before a systemwide install, or just edit the file "configMe.py" in the executable packages final location \(\~/local/lib/python*/site-packages/bulkFileManager/configMe.py\) for a user install.
-  - Copy/move files from source to the distributed destinations.
   - Rename only to remove characters which cause issues for most OS options.
   - Rename randomly.
   - Test media files, disgarding or moving to an error directory any files which fail the basic tests configure in "configMe.py".
