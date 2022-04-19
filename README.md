@@ -26,7 +26,10 @@ I like a broad selection of images or clips randomized, so I collect media, sort
   - My CF module and it's deps is required.
     - The only one of those most people may want is the hashlib.
   - Other requirements are added for some features as follows:
-    - `Random filenames` hashlib
+    - `Random filenames` 
+      - hashlib
+    - `Media tests`
+      - 
   - bulkFileManager, bulkfilemanager, and bfm are installed to ~/.local/bin if no access to systemwide locations are available.
     - The same executables are installed in /usr/bin or /usr/local/bin
 <br>
@@ -46,6 +49,11 @@ I like a broad selection of images or clips randomized, so I collect media, sort
   - Edit which category a file extention goes into, add or remove extensions from a category, etc.
     - You can add categories, test utilities per extension, etc. by editing the source file "configMe.py" before a systemwide install, or just edit the file "configMe.py" in the executable packages final location \(\~/local/lib/python*/site-packages/bulkFileManager/configMe.py\) for a user install.
   - Rename only to remove characters which cause issues for most OS options.
+    - Currently the only acceptable destination characters are ".0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_".
+      - Edit the regular experessions in "configMe.py" to change that selection.
+    - Unpleasant characters can be deleted or replaced with one of the acceptable characters as configured in "configMe.py"
   - Rename randomly.
+  - Run a per extension executable on each file with or without moving or copying the file.
+  - Select several options for destination directory, number of destination numeric directories.
   - Test media files, disgarding or moving to an error directory any files which fail the basic tests configure in "configMe.py".
-  - 
+    - This test can be done with or without copying or moving files.
